@@ -25,11 +25,11 @@ public class administracanciones {
         archivo = new File(path);
     }
 
-    public ArrayList<canciones> getListaPersonas() {
+    public ArrayList<canciones> getListaCanciones() {
         return listacanciones;
     }
 
-    public void setListaPersonas(ArrayList<canciones> listacanciones) {
+    public void setListaCanciones(ArrayList<canciones> listacanciones) {
         this.listacanciones = listacanciones;
     }
 
@@ -41,7 +41,7 @@ public class administracanciones {
         this.archivo = archivo;
     }
     
-    public void setAlumno(canciones a){
+    public void setCancion(canciones a){
         listacanciones.add(a);
     }
     
