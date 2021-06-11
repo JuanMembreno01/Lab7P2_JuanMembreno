@@ -18,6 +18,7 @@ public class canciones {
     private String exclusiva;
     private String nombreproductor;
     private String nombreartistainvitado;
+    private static final long SerialVersionUID = 777L;
 
     public canciones() {
     }

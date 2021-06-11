@@ -5,15 +5,19 @@
  */
 package lab7p2_juanmembreño;
 
+import java.io.Serializable;
+
 /**
  *
  * @author usuario
  */
-public class artista {
-    private String nombre ;
+public class artista implements Serializable {
+
+    private String nombre;
     private String genero;
     private String nombredisquera;
     private String alias;
+    private static final long SerialVersionUID = 555L;
 
     public artista() {
     }
@@ -59,7 +63,8 @@ public class artista {
 
     @Override
     public String toString() {
-        return "artista{" + "nombre=" + nombre + ", genero=" + genero + ", nombredisquera=" + nombredisquera + ", alias=" + alias + '}';
+        return nombre;
+        //return "artista{" + "nombre=" + nombre + ", genero=" + genero + ", nombredisquera=" + nombredisquera + ", alias=" + alias + '}';
     }
-    
+
 }

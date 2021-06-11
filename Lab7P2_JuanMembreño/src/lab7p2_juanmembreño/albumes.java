@@ -5,16 +5,79 @@
  */
 package lab7p2_juanmembreño;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author usuario
  */
-public class albumes extends artista {
+public class albumes {
      private String nombre ;
        private String fechap;
        private String genromusical;
        private String formatepublicacion;
        private String aliasproductor;
-       ArrayList<> canciones= new ArrayList();
+       ArrayList<canciones> canciones= new ArrayList();
+
+    public albumes() {
+    }
+
+    public albumes(String nombre, String fechap, String genromusical, String formatepublicacion, String aliasproductor) {
+        this.nombre = nombre;
+        this.fechap = fechap;
+        this.genromusical = genromusical;
+        this.formatepublicacion = formatepublicacion;
+        this.aliasproductor = aliasproductor;
+    }
+
+       
+       
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getFechap() {
+        return fechap;
+    }
+
+    public void setFechap(String fechap) {
+        this.fechap = fechap;
+    }
+
+    public String getGenromusical() {
+        return genromusical;
+    }
+
+    public void setGenromusical(String genromusical) {
+        this.genromusical = genromusical;
+    }
+
+    public String getFormatepublicacion() {
+        return formatepublicacion;
+    }
+
+    public void setFormatepublicacion(String formatepublicacion) {
+        this.formatepublicacion = formatepublicacion;
+    }
+
+    public String getAliasproductor() {
+        return aliasproductor;
+    }
+
+    public void setAliasproductor(String aliasproductor) {
+        this.aliasproductor = aliasproductor;
+    }
+
+    public ArrayList<canciones> getCanciones() {
+        return canciones;
+    }
+
+    public void setCanciones(ArrayList<canciones> canciones) {
+        this.canciones = canciones;
+    }
        
 }
