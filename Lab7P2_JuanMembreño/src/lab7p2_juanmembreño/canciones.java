@@ -5,11 +5,13 @@
  */
 package lab7p2_juanmembreño;
 
+import java.io.Serializable;
+
 /**
  *
  * @author usuario
  */
-public class canciones {
+public class canciones implements Serializable{
 
     private String nombre;
     private String duracion;
@@ -91,7 +93,8 @@ public class canciones {
 
     @Override
     public String toString() {
-        return "canciones{" + "nombre=" + nombre + ", duracion=" + duracion + ", nombrecompositor=" + nombrecompositor + ", nombredistribuidor=" + nombredistribuidor + ", exclusiva=" + exclusiva + ", nombreproductor=" + nombreproductor + ", nombreartistainvitado=" + nombreartistainvitado + '}';
+        return nombre;
+       // return "canciones{" + "nombre=" + nombre + ", duracion=" + duracion + ", nombrecompositor=" + nombrecompositor + ", nombredistribuidor=" + nombredistribuidor + ", exclusiva=" + exclusiva + ", nombreproductor=" + nombreproductor + ", nombreartistainvitado=" + nombreartistainvitado + '}';
     }
 
 }

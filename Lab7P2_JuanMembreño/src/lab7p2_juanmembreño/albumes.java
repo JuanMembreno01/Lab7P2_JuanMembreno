@@ -5,24 +5,27 @@
  */
 package lab7p2_juanmembreño;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  *
  * @author usuario
  */
-public class albumes {
-     private String nombre ;
-       private String fechap;
-       private String genromusical;
-       private String formatepublicacion;
-       private String aliasproductor;
-       ArrayList<canciones> canciones= new ArrayList();
+public class albumes implements Serializable {
+
+    private String nombre;
+    private String fechap;
+    private String genromusical;
+    private String formatepublicacion;
+    private String aliasproductor;
+    ArrayList<canciones> canciones = new ArrayList();
+    private static final long SerialVersionUID = 778L;
 
     public albumes() {
     }
 
-    public albumes(String nombre, String fechap, String genromusical, String formatepublicacion, String aliasproductor) {
+    public albumes(String nombre, String fechap, String genromusical, String formatepublicacion, String aliasproductor,canciones m) {
         this.nombre = nombre;
         this.fechap = fechap;
         this.genromusical = genromusical;
@@ -30,8 +33,6 @@ public class albumes {
         this.aliasproductor = aliasproductor;
     }
 
-       
-       
     public String getNombre() {
         return nombre;
     }
@@ -79,5 +80,5 @@ public class albumes {
     public void setCanciones(ArrayList<canciones> canciones) {
         this.canciones = canciones;
     }
-       
+
 }
