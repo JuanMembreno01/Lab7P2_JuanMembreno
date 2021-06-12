@@ -20,7 +20,7 @@ public class albumes implements Serializable {
     private String formatepublicacion;
     private String aliasproductor;
     ArrayList<canciones> canciones = new ArrayList();
-    private static final long SerialVersionUID = 778L;
+    private static final long SerialVersionUID = 779L;
 
     public albumes() {
     }
@@ -79,6 +79,12 @@ public class albumes implements Serializable {
 
     public void setCanciones(ArrayList<canciones> canciones) {
         this.canciones = canciones;
+    }
+
+    @Override
+    public String toString() {
+        return nombre;
+      //  return "albumes{" + '}';
     }
 
 }
